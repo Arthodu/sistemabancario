@@ -9,7 +9,7 @@ def menu():
     [nc]\tNova conta
     [lc]\tListar contas
     [nu]\tNovo usuário
-    [q]\tSair
+    [x]\tSair
     => """
     return input(textwrap.dedent(menu))
 
@@ -104,7 +104,7 @@ def listar_contas(contas):
 
 def main():
     LIMITE_SAQUES = 3
-    AGENCIA = "0001"
+    AGENCIA = "2727"
 
     saldo = 0
     limite = 500
@@ -149,7 +149,7 @@ def main():
         elif opcao == "lc":
             listar_contas(contas)
 
-        elif opcao == "q":
+        elif opcao == "x":
             break
 
         else:
